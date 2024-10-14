@@ -1,7 +1,7 @@
 package _bool
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/function"
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 func (v *Bool) Set(value bool) {

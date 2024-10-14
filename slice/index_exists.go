@@ -1,8 +1,9 @@
 package slice
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/errors2/define"
 	"reflect"
+
+	"github.com/kyaxcorp/go-helper/errors2/define"
 )
 
 func IndexExists(slice interface{}, indexNr int) (bool, error) {

@@ -2,8 +2,9 @@ package waiter
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
 	"sync"
+
+	"github.com/kyaxcorp/go-helper/_context"
 )
 
 /*

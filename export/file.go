@@ -2,8 +2,8 @@ package export
 
 import (
 	"github.com/google/uuid"
-	"github.com/kyaxcorp/go-core/core/helpers/cmap"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem/tmp"
+	"github.com/kyaxcorp/go-helper/cmap"
+	"github.com/kyaxcorp/go-helper/filesystem/tmp"
 )
 
 var ExportMap = cmap.New(cmap.MapConstructor{})

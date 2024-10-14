@@ -2,10 +2,11 @@ package _bool
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
-	"github.com/kyaxcorp/go-core/core/helpers/sync/_map_string_interface"
-	"github.com/kyaxcorp/go-core/core/helpers/sync/waiter"
 	"sync"
+
+	"github.com/kyaxcorp/go-helper/_context"
+	"github.com/kyaxcorp/go-helper/sync/_map_string_interface"
+	"github.com/kyaxcorp/go-helper/sync/waiter"
 )
 
 func New() *Bool {

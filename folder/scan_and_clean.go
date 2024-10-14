@@ -1,10 +1,11 @@
 package folder
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/file"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
 	"os"
+
+	"github.com/kyaxcorp/go-helper/file"
+	"github.com/kyaxcorp/go-helper/filesystem"
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 type ScanAndCleanResult struct {

@@ -1,13 +1,14 @@
 package fsnotify
 
 import (
-	"github.com/fsnotify/fsnotify"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
 	"log"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/fsnotify/fsnotify"
+	"github.com/kyaxcorp/go-helper/errors2"
+	"github.com/kyaxcorp/go-helper/filesystem"
 )
 
 type Op fsnotify.Op

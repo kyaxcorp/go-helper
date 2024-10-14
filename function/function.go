@@ -1,8 +1,9 @@
 package function
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/value"
 	"reflect"
+
+	"github.com/kyaxcorp/go-helper/value"
 )
 
 // IsFunc -> Checks the type

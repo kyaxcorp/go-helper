@@ -4,8 +4,6 @@ import (
 	"compress/gzip"
 	"errors"
 	"fmt"
-	"github.com/kyaxcorp/go-core/core/helpers/cmap"
-	name2 "github.com/kyaxcorp/go-core/core/helpers/process/name"
 	"io"
 	"io/ioutil"
 	"os"
@@ -14,6 +12,9 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/cmap"
+	name2 "github.com/kyaxcorp/go-helper/process/name"
 )
 
 const (
@@ -52,7 +53,7 @@ var _ io.WriteCloser = (*Logger)(nil)
 // `/var/log/foo/server.log`, a backup created at 6:30pm on Nov 11 2016 would
 // use the filename `/var/log/foo/server-2016-11-04T18-30-00.000.log`
 //
-// Cleaning Up Old Log Files
+// # Cleaning Up Old Log Files
 //
 // Whenever a new logfile gets created, old log files may be deleted.  The most
 // recent files according to the encoded timestamp will be retained, up to a

@@ -1,13 +1,14 @@
 package path
 
 import (
-	"github.com/kyaxcorp/go-core/core/config"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
-	"github.com/kyaxcorp/go-core/core/helpers/process/name"
-	"github.com/kyaxcorp/go-core/core/helpers/str"
 	"log"
 	"os"
 	"path/filepath"
+
+	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-helper/filesystem"
+	"github.com/kyaxcorp/go-helper/process/name"
+	"github.com/kyaxcorp/go-helper/str"
 )
 
 // Root -> It should return the current process dir path

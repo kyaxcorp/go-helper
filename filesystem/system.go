@@ -1,8 +1,9 @@
 package filesystem
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem/realpath"
 	"path/filepath"
+
+	"github.com/kyaxcorp/go-helper/filesystem/realpath"
 )
 
 // Returns the name from a path

@@ -1,8 +1,9 @@
 package _interface
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/_struct"
 	"reflect"
+
+	"github.com/kyaxcorp/go-helper/_struct"
 )
 
 // CloneInterfaceItem -> if you have a variable interface{}, it will take whatever value from there and

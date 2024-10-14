@@ -1,11 +1,12 @@
 package port
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/conv"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2/define"
 	"net"
 	"strings"
 	"sync"
+
+	"github.com/kyaxcorp/go-helper/conv"
+	"github.com/kyaxcorp/go-helper/errors2/define"
 )
 
 // add a lock when searching for a free address!

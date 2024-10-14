@@ -1,9 +1,10 @@
 package lock
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
 	"sync"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/_context"
 )
 
 //var eventsLocks = make(map[string]sync.RWMutex)

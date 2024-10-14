@@ -1,8 +1,9 @@
 package gor
 
 import (
-	"github.com/kyaxcorp/go-core/core/logger/model"
 	"time"
+
+	"github.com/kyaxcorp/go-logger/model"
 )
 
 type ReRunOnRecoverOptions struct {

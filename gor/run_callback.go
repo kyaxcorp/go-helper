@@ -1,10 +1,11 @@
 package gor
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/conv"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
 	"log"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/conv"
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 func (g *GInstance) runCallback() {

@@ -2,7 +2,8 @@ package _context
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
+
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 type CancelCtx struct {

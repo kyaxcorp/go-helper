@@ -1,14 +1,15 @@
 package lock
 
 import (
+	"sync"
+
 	"github.com/gofrs/flock"
 	"github.com/kyaxcorp/go-core/core/config"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2/define"
-	fsPath "github.com/kyaxcorp/go-core/core/helpers/filesystem/path"
-	"github.com/kyaxcorp/go-core/core/helpers/folder"
-	"github.com/kyaxcorp/go-core/core/helpers/hash"
-	"github.com/kyaxcorp/go-core/core/logger/coreLog"
-	"sync"
+	"github.com/kyaxcorp/go-helper/errors2/define"
+	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
+	"github.com/kyaxcorp/go-helper/folder"
+	"github.com/kyaxcorp/go-helper/hash"
+	"github.com/kyaxcorp/go-logger/coreLog"
 )
 
 // TODO: is it correct?!

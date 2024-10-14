@@ -3,8 +3,9 @@ package Map
 import (
 	"database/sql"
 	"database/sql/driver"
-	"github.com/kyaxcorp/go-core/core/helpers/_struct"
 	"reflect"
+
+	"github.com/kyaxcorp/go-helper/_struct"
 )
 
 type MapConvertOpts struct {

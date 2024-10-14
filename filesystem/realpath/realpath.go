@@ -2,9 +2,10 @@ package realpath
 
 import (
 	"bytes"
-	"github.com/kyaxcorp/go-core/core/helpers/str"
 	"os"
 	"path/filepath"
+
+	"github.com/kyaxcorp/go-helper/str"
 )
 
 // Realpath returns the real path of a given file in the os

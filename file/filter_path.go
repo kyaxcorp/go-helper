@@ -1,8 +1,9 @@
 package file
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
 	"strings"
+
+	"github.com/kyaxcorp/go-helper/filesystem"
 )
 
 func FilterPath(path string) string {

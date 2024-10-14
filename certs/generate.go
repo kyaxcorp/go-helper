@@ -10,15 +10,16 @@ import (
 	"crypto/x509/pkix"
 	"encoding/pem"
 	"fmt"
-	"github.com/kyaxcorp/go-core/core/helpers/_struct/defaults"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2"
-	"github.com/kyaxcorp/go-core/core/helpers/file"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
 	"math/big"
 	"net"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/_struct/defaults"
+	"github.com/kyaxcorp/go-helper/errors2"
+	"github.com/kyaxcorp/go-helper/file"
+	"github.com/kyaxcorp/go-helper/filesystem"
 )
 
 func publicKey(priv interface{}) interface{} {

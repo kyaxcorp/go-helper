@@ -1,10 +1,11 @@
 package _struct
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/_int"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2/define"
 	"reflect"
 	"strings"
+
+	"github.com/kyaxcorp/go-helper/_int"
+	"github.com/kyaxcorp/go-helper/errors2/define"
 )
 
 func GetNestedFieldReflectValue(val reflect.Value, path string) (reflect.Value, error) {

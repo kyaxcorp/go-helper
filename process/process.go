@@ -1,15 +1,16 @@
 package process
 
 import (
-	"github.com/kyaxcorp/go-core/core/config"
-	"github.com/kyaxcorp/go-core/core/helpers/file"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
-	fsPath "github.com/kyaxcorp/go-core/core/helpers/filesystem/path"
-	"github.com/kyaxcorp/go-core/core/helpers/folder"
-	"github.com/kyaxcorp/go-core/core/helpers/hash"
 	"os"
 	"path/filepath"
 	"strconv"
+
+	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-helper/file"
+	"github.com/kyaxcorp/go-helper/filesystem"
+	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
+	"github.com/kyaxcorp/go-helper/folder"
+	"github.com/kyaxcorp/go-helper/hash"
 )
 
 func getPIDsFolderPath() (string, error) {

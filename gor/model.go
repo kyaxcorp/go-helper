@@ -2,9 +2,10 @@ package gor
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
-	"github.com/kyaxcorp/go-core/core/helpers/sync/_bool"
-	"github.com/kyaxcorp/go-core/core/logger/model"
+
+	"github.com/kyaxcorp/go-helper/_context"
+	"github.com/kyaxcorp/go-helper/sync/_bool"
+	"github.com/kyaxcorp/go-logger/model"
 )
 
 type GInstance struct {

@@ -1,8 +1,9 @@
 package local
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/cmap"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/cmap"
 )
 
 var events = cmap.New(cmap.MapConstructor{})

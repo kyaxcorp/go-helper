@@ -3,10 +3,11 @@ package defaults
 import (
 	"encoding/json"
 	"errors"
-	"github.com/kyaxcorp/go-core/core/helpers/conv"
 	"reflect"
 	"strconv"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/conv"
 )
 
 var (

@@ -2,10 +2,11 @@ package errors2
 
 import (
 	"errors"
-	"github.com/kyaxcorp/go-core/core/helpers/error_reporting"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2/define"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
-	"github.com/kyaxcorp/go-core/core/logger/application/vars"
+
+	"github.com/kyaxcorp/go-helper/error_reporting"
+	"github.com/kyaxcorp/go-helper/errors2/define"
+	"github.com/kyaxcorp/go-helper/function"
+	"github.com/kyaxcorp/go-logger/application/vars"
 )
 
 var report = true

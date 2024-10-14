@@ -5,12 +5,13 @@ import (
 	"compress/gzip"
 	"encoding/json"
 	"fmt"
-	"github.com/kyaxcorp/go-core/core/helpers/process/name"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/process/name"
 
 	"github.com/BurntSushi/toml"
 	"gopkg.in/yaml.v2"

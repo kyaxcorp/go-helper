@@ -2,18 +2,19 @@ package shutdown
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/config"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
-	"github.com/kyaxcorp/go-core/core/logger"
-	"github.com/kyaxcorp/go-core/core/logger/application/vars"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-helper/_context"
+	"github.com/kyaxcorp/go-helper/function"
+	"github.com/kyaxcorp/go-logger"
+	"github.com/kyaxcorp/go-logger/application/vars"
 )
 
-//var WaitFinished = make(chan bool)
+// var WaitFinished = make(chan bool)
 // TODO: should be set here the default context instead of the background?!
 var WaitFinished, WaitCancel = context.WithCancel(context.Background())
 

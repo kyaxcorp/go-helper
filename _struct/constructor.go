@@ -1,8 +1,9 @@
 package _struct
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/ptr"
 	"reflect"
+
+	"github.com/kyaxcorp/go-helper/ptr"
 )
 
 func New(obj interface{}) *Helper {

@@ -1,11 +1,12 @@
 package certs
 
 import (
-	"github.com/kyaxcorp/go-core/core/config"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem"
-	fsPath "github.com/kyaxcorp/go-core/core/helpers/filesystem/path"
-	"github.com/kyaxcorp/go-core/core/helpers/folder"
 	"log"
+
+	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-helper/filesystem"
+	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
+	"github.com/kyaxcorp/go-helper/folder"
 )
 
 func GetCertsFullPath() string {

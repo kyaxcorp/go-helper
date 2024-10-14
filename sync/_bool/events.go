@@ -1,7 +1,7 @@
 package _bool
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/function"
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 type OnChange func(v *Bool, newVal bool)

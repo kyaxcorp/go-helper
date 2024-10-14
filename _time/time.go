@@ -1,8 +1,9 @@
 package _time
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/function"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 type SleepStatus struct {

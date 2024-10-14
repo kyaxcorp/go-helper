@@ -2,10 +2,11 @@ package local
 
 import (
 	"errors"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
 	"sort"
 	"strconv"
 	"strings"
+
+	"github.com/kyaxcorp/go-helper/function"
 )
 
 func fmtListenerName(name string) string {

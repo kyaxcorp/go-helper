@@ -2,7 +2,8 @@ package json
 
 import (
 	"encoding/json"
-	"github.com/kyaxcorp/go-core/core/helpers/conv"
+
+	"github.com/kyaxcorp/go-helper/conv"
 )
 
 func Encode(v interface{}) (string, error) {

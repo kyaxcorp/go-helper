@@ -1,10 +1,11 @@
 package name
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/hash"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/kyaxcorp/go-helper/hash"
 )
 
 var cachedCleanAppName string

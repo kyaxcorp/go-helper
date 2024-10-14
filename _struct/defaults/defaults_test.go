@@ -1,10 +1,11 @@
 package defaults
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/_struct/defaults/fixture"
 	"reflect"
 	"testing"
 	"time"
+
+	"github.com/kyaxcorp/go-helper/_struct/defaults/fixture"
 )
 
 type (
