@@ -12,7 +12,7 @@ require (
 	github.com/gofrs/flock v0.12.1
 	github.com/google/uuid v1.6.0
 	github.com/klauspost/cpuid/v2 v2.2.8
-	github.com/kyaxcorp/go-config v1.0.0
+	github.com/kyaxcorp/go-config v1.0.1
 	github.com/kyaxcorp/go-core v0.0.1-20240805-0001
 	github.com/kyaxcorp/go-logger v1.0.1
 	github.com/kyaxcorp/gofm v0.0.1-20220602-0003
