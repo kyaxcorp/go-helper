@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-config"
 	"github.com/kyaxcorp/go-helper/_context"
 	"github.com/kyaxcorp/go-helper/function"
 	"github.com/kyaxcorp/go-logger"

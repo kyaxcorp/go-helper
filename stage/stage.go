@@ -1,6 +1,6 @@
 package stage
 
-import "github.com/kyaxcorp/go-core/core/config"
+import "github.com/kyaxcorp/go-config"
 
 func Get() string {
 	return config.GetConfig().Application.Stage

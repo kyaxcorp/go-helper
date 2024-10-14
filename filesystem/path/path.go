@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-config"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	"github.com/kyaxcorp/go-helper/process/name"
 	"github.com/kyaxcorp/go-helper/str"

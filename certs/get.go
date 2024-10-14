@@ -3,7 +3,7 @@ package certs
 import (
 	"log"
 
-	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-config"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
 	"github.com/kyaxcorp/go-helper/folder"

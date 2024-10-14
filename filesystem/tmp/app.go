@@ -3,7 +3,7 @@ package tmp
 import (
 	"strings"
 
-	"github.com/kyaxcorp/go-core/core/config"
+	"github.com/kyaxcorp/go-config"
 	"github.com/kyaxcorp/go-helper/errors2/define"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
