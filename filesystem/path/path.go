@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kyaxcorp/go-config"
+	"github.com/kyaxcorp/go-helper/config"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	"github.com/kyaxcorp/go-helper/process/name"
 	"github.com/kyaxcorp/go-helper/str"
@@ -63,7 +63,7 @@ func GenRealPath(path string, appDataPath bool) (string, error) {
 			if appDataPath {
 				// We take the name from the config + we generate additional suffix if other binaries exist in the same
 				// folder... in this case, each binary will have its own appdata folder!
-				appDataP, appErr := GenRealPath(config.GetConfig().Application.AppDataPath+"_"+name.GetCurrentProcessCleanMD5ExecName(), false)
+				appDataP, appErr := GenRealPath(config.GetConfig().AppDataPath+"_"+name.GetCurrentProcessCleanMD5ExecName(), false)
 				if appErr == nil {
 					p = appDataP + filesystem.DirSeparator()
 				}

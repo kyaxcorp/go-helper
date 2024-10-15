@@ -3,7 +3,7 @@ package tmp
 import (
 	"strings"
 
-	"github.com/kyaxcorp/go-config"
+	"github.com/kyaxcorp/go-helper/config"
 	"github.com/kyaxcorp/go-helper/errors2/define"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
@@ -12,7 +12,7 @@ import (
 
 func GetAppTmpPath(paths ...string) (string, error) {
 	var _err error = nil
-	itemPath := config.GetConfig().Application.TempPath
+	itemPath := config.GetConfig().TempPath
 	itemPath, _err = fsPath.GenRealPath(itemPath, true)
 
 	if _err != nil {

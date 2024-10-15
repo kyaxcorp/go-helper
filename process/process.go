@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/kyaxcorp/go-config"
+	"github.com/kyaxcorp/go-helper/config"
 	"github.com/kyaxcorp/go-helper/file"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
@@ -15,7 +15,7 @@ import (
 
 func getPIDsFolderPath() (string, error) {
 	var _err error = nil
-	pidsPath := config.GetConfig().Application.PIDsPath
+	pidsPath := config.GetConfig().PIDsPath
 	pidsPath, _err = fsPath.GenRealPath(pidsPath, true)
 
 	if _err != nil {

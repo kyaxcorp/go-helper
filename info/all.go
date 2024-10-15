@@ -1,12 +1,13 @@
 package info
 
 import (
-	"github.com/kyaxcorp/go-core/core/bootstrap"
-	"github.com/shirou/gopsutil/host"
-	"github.com/shirou/gopsutil/mem"
+	// "github.com/kyaxcorp/go-core/core/bootstrap"
 	"os"
 	"runtime"
 	"time"
+
+	"github.com/shirou/gopsutil/host"
+	"github.com/shirou/gopsutil/mem"
 )
 
 // TODO: should be moved in helpers or smth
@@ -30,7 +31,7 @@ type SystemStatus struct {
 }
 
 func GetSystemStatus() SystemStatus {
-	b := bootstrap.GetProcessBootstrap()
+	// b := bootstrap.GetProcessBootstrap()
 
 	executablePath, _ := os.Executable()
 
@@ -61,12 +62,12 @@ func GetSystemStatus() SystemStatus {
 	}()
 
 	return SystemStatus{
-		PID:                   os.Getpid(),
-		ExecutableLocation:    executablePath,
-		UserID:                os.Getuid(),
-		GroupID:               os.Getgid(),
-		Started:               b.GetStartTime(),
-		RunningTimeSeconds:    b.GetRunningTime().Seconds(),
+		PID:                os.Getpid(),
+		ExecutableLocation: executablePath,
+		UserID:             os.Getuid(),
+		GroupID:            os.Getgid(),
+		// Started:               b.GetStartTime(),
+		// RunningTimeSeconds:    b.GetRunningTime().Seconds(),
 		NrOfRunningGoroutines: runtime.NumGoroutine(),
 		NrOfCPUUsed:           runtime.NumCPU(),
 		NrOfCGOCalls:          runtime.NumCgoCall(),

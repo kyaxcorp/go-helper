@@ -3,7 +3,7 @@ package certs
 import (
 	"log"
 
-	"github.com/kyaxcorp/go-config"
+	"github.com/kyaxcorp/go-helper/config"
 	"github.com/kyaxcorp/go-helper/filesystem"
 	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
 	"github.com/kyaxcorp/go-helper/folder"
@@ -11,7 +11,7 @@ import (
 
 func GetCertsFullPath() string {
 	var err error = nil
-	certsPath := config.GetConfig().Application.CertsPath
+	certsPath := config.GetConfig().CertsPath
 	certsPath, err = fsPath.GenRealPath(certsPath, true)
 
 	if err != nil {

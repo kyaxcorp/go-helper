@@ -1,9 +1,9 @@
 package stage
 
-import "github.com/kyaxcorp/go-config"
+import "github.com/kyaxcorp/go-helper/config"
 
 func Get() string {
-	return config.GetConfig().Application.Stage
+	return config.GetConfig().Stage
 }
 
 func IsDev() bool {

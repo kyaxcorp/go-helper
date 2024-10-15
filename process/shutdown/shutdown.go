@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/kyaxcorp/go-config"
 	"github.com/kyaxcorp/go-helper/_context"
+	"github.com/kyaxcorp/go-helper/config"
 	"github.com/kyaxcorp/go-helper/function"
 	"github.com/kyaxcorp/go-logger"
 	"github.com/kyaxcorp/go-logger/application/vars"
@@ -35,7 +35,7 @@ func CallGracefulShutdown() {
 		}
 	}
 
-	waitTime := config.GetConfig().Application.OnShutdownWaitSeconds
+	waitTime := config.GetConfig().OnShutdownWaitSeconds
 	if vars.ApplicationLogger != nil {
 		logger.GetAppLogger().Info().Int("shutdown_wait_time", waitTime).Msg("waiting processes to finish")
 	}

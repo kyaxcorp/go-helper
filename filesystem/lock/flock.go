@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/gofrs/flock"
-	"github.com/kyaxcorp/go-config"
+	"github.com/kyaxcorp/go-helper/config"
 	"github.com/kyaxcorp/go-helper/errors2/define"
 	fsPath "github.com/kyaxcorp/go-helper/filesystem/path"
 	"github.com/kyaxcorp/go-helper/folder"
@@ -33,7 +33,7 @@ func getLockPath(lockName string) (string, error) {
 
 func getLocksDir() (string, error) {
 	var pathErr error
-	locksPath := config.GetConfig().Application.LocksPath
+	locksPath := config.GetConfig().LocksPath
 	coreLog.Info().Str("application_locks_path", locksPath).Msg("application locks path")
 
 	locksPath, pathErr = fsPath.GenRealPath(locksPath, true)

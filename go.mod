@@ -13,7 +13,6 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/klauspost/cpuid/v2 v2.2.8
 	github.com/kyaxcorp/go-config v1.0.1
-	github.com/kyaxcorp/go-core v0.0.1-20240805-0001
 	github.com/kyaxcorp/go-logger v1.0.1
 	github.com/kyaxcorp/gofm v0.0.1-20220602-0003
 	github.com/robfig/cron/v3 v3.0.1
@@ -49,6 +48,7 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/kyaxcorp/go-core v0.0.1-20240805-0001 // indirect
 	github.com/kyaxcorp/go-db v1.0.0 // indirect
 	github.com/kyaxcorp/go-http v1.0.1 // indirect
 	github.com/kyaxcorp/go-websocket v1.0.0 // indirect
