@@ -1,5 +1,7 @@
 package config
 
+import "github.com/kyaxcorp/go-helper/_struct"
+
 var cfg Config
 
 type Config struct {
@@ -21,4 +23,15 @@ type Config struct {
 
 func GetConfig() Config {
 	return cfg
+}
+
+func SetDefaults(cf *Config) error {
+	return _struct.SetDefaultValues(cf)
+}
+
+func init() {
+	err := SetDefaults(&cfg)
+	if err != nil {
+		panic(err)
+	}
 }
